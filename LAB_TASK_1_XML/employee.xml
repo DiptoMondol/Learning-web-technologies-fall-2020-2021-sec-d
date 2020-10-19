@@ -1,0 +1,44 @@
+<employee_information>
+
+	<id>1</id>
+	<f_name>John</f_name>
+	<l_name>Doe</l_name>
+	<address>
+		<flat_no></flat_no>
+		<house_no>38</house_no>
+		<road_no>3</road_no>
+		<area>Banani</area>
+		<city>Dhaka</city>
+    </address>
+    <department>Sales</department>
+    <salary>$20000</salary>
+
+
+     <id>2</id>
+	<f_name>Mark</f_name>
+	<l_name>Zukerberg</l_name>
+	<address>
+		<flat_no>A/1</flat_no>
+		<house_no>20</house_no>
+		<road_no>18</road_no>
+		<area>Mirpur</area>
+		<city>Dhaka</city>
+    </address>
+    <department>Accounts</department>
+    <salary>$12000</salary>
+
+
+    <id>3</id>
+	<f_name>Ala</f_name>
+	<l_name>Voski</l_name>
+	<address>
+		<flat_no></flat_no>
+		<house_no>38</house_no>
+		<road_no>3</road_no>
+		<area>Motijheel</area>
+		<city></city>
+    </address>
+    <department>Human Resource</department>
+    <salary>$30000</salary>
+
+</employee_information>
