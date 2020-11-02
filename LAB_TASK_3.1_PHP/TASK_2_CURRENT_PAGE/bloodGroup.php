@@ -1,7 +1,16 @@
 <?php
     if(isset($_REQUEST['submit'])){
-	   echo $_REQUEST['bloodGroup'];
-       }
+	   if (empty($_REQUEST ['bloodGroup'])){
+	
+		echo "Field Required";
+	}
+	
+	else{
+	
+		
+		echo $_REQUEST['bloodGroup'];
+	}
+}
 ?>
 <!DOCTYPE html>
 <html>
