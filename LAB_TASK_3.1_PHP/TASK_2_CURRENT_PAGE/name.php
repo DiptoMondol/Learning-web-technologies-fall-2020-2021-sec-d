@@ -22,7 +22,7 @@
 	<form method="post" >
 		<fieldset>
 			<legend>Name</legend>
-			<input type="text" name="name" value=" <?=$data ?>">
+			<input type="text" name="name" value="Dipto">
 			<hr>
 			<input type="submit" name="submit" value="Submit">
 		</fieldset>
