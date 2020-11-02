@@ -1,16 +1,15 @@
 <?php
-	
-	$data = "";
-
-	if(isset($_REQUEST['submit'])){
-		$name = $_REQUEST['name'];
-		
-		if($name == ""){
+if(isset($_REQUEST['submit'])){
+    $name = $_REQUEST['name'];
+     echo $_POST['name'];
+     if($name == ""){
 			echo " field required...";
 		}else{
 			$data = $name;
+			
 		}
-	}
+   
+}
 ?>
 
 <!DOCTYPE html>
@@ -22,9 +21,9 @@
 	<form method="post" >
 		<fieldset>
 			<legend>Name</legend>
-			<input type="text" name="name" value="Dipto">
+			<input type="text" name="name" value="">
 			<hr>
-			<input type="submit" name="submit" value="Submit">
+			<input type="submit" name="submit" value="submit">
 		</fieldset>
 	</form>
 </body>
