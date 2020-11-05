@@ -1,6 +1,5 @@
 <?php
-	session_start();
-	if(isset($_COOKIE['flag'])){
+	
 ?>
 
 
@@ -15,10 +14,3 @@
 </body>
 </html>
 
-<?php
-
-	}else{
-		header('location: login.php?msg=login_first');
-	}
-
-?>
