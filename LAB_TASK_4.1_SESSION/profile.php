@@ -8,7 +8,7 @@
 <body>
      <form>
 		<br/>
-		<table border ='1' cellpadding="0" cellspacing="0" >
+		<table border ='1'  cellspacing="0" >
 			<tr>
 				<td colspan='2'>Xcompany
 					Logged in as <a href = "dashboard.php" name="username" > <?php echo $_COOKIE['uname']; ?></a>|
