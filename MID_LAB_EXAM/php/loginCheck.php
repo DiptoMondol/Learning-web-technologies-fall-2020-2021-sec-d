@@ -16,7 +16,7 @@
             
 			if($user_info[3] == $id and $user_info[2] == $password){
 				
-				header('location: ../view/profile.php');
+				header('location: ../view/admin_home.php');
 			}else{
 				header('location: ../view/login.php?msg=invalid');
 			}
