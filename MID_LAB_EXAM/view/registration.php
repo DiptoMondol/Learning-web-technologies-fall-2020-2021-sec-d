@@ -35,8 +35,8 @@
 					Confirm Password<br/><input type ="password" name ="cpass"><br/>
 					Name<br/><input type="text" name ="name"><br/>
 					User Type<hr/>
-					<input type="radio" name="user" />User
-					<input type="radio" name ="user"/>Admin
+					<input type="radio" name="user" value="User"/>User
+					<input type="radio" name ="user" value="Admin"/>Admin
 					<hr/>
 					<input type="submit" name="submit" value="Sign Up">
 					<a href="login.html">Sign In</a>
