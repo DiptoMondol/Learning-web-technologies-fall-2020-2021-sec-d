@@ -8,8 +8,20 @@
 		$cno = $_POST['cno'];
 		$username = $_POST['username'];
 		$password = $_POST['password'];
-		$conn = getConnection();
-		$sql = $conn->updateReaderInfo($conn, $name, $cno,$username,$password);
+	
+		
+		
+	
+		$user = [
+			    'employeename'=>$name,
+				'contact no'=>$cno,
+				'username'=> $username,
+				'password'=> $password
+			];
+
+			updateUsers($user);
+			echo "User updated Successfully !";
+		
 		}
 		
 		}

@@ -5,6 +5,8 @@
 	$conn = getConnection();
 	$sql = "select * from info";
 	$result = mysqli_query($conn, $sql);
+	//$data = mysqli_fetch_assoc($result);
+	//echo $data['employeename'];
 
 ?>
 
@@ -40,8 +42,8 @@
 					<td><?= $data['username'] ?></td>
 					<td><?= $data['password'] ?></td>
 					<td>
-						<a href="insert.php"> Insert</a> |
-						<a href="edit.php"> Update</a> |
+						<a href="insert.php" >Insert</a> |
+						<a href="edit.php?name=<?= $data['employeename'] ?>">Update</a> |
 					    <a href="delete.php"> DELETE</a>
 						
 					</td>

@@ -53,7 +53,7 @@
 	function insertUsers($user){
 
 		$conn = getConnection();
-		$sql = "insert into info values('','{$user['employeename']}','{$user['contact no']}', '{$user['username']}', '{$user['password']}', '{$user['email']}', '{$user['type']}')";
+		$sql = "insert into info values('{$user['employeename']}','{$user['contact no']}', '{$user['username']}','{$user['password']}')";
 
 		$status = mysqli_query($conn, $sql);
 
@@ -85,15 +85,17 @@
 	}
 
 	function updateUsers($user){
+		$conn = getConnection();
+		$sql ="update info set employeename = '{$user['employeename']}',contact no = '{$user['contact no']}', '{$user['username']}','{$user['password']}')";
+
+	    $status = mysqli_query($conn, $sql);
+
+	    if($status){
+			return true;
+		}else{
+			return false;
+		}
 
 	}
-	function updateReaderInfo($conn,$name, $cno, $username, $password)
- {
-	 
-	$sql = $conn->query( "UPDATE readerregistrationinfo set name='". $name."', email='". $email."', phone='". $phone."',dob='". $dob."' WHERE userId='". $id ."'");
-	
-	 return $sql;
-	 
- }
 
 ?>
