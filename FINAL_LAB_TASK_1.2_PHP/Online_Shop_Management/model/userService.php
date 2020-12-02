@@ -87,5 +87,13 @@
 	function updateUsers($user){
 
 	}
+	function updateReaderInfo($conn,$name, $cno, $username, $password)
+ {
+	 
+	$sql = $conn->query( "UPDATE readerregistrationinfo set name='". $name."', email='". $email."', phone='". $phone."',dob='". $dob."' WHERE userId='". $id ."'");
+	
+	 return $sql;
+	 
+ }
 
 ?>

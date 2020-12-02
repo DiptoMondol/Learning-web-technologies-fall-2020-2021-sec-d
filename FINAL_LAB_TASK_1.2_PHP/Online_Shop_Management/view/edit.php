@@ -1,6 +1,6 @@
 <?php
 
-include('../php/insertCheck.php');
+include('../php/editCheck.php');
 ?>
 
 <!DOCTYPE html>
