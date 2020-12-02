@@ -37,7 +37,7 @@
 	function getAllUsers(){
 
 		$conn = getConnection();
-		$sql = "select * from users";
+		$sql = "select * from info";
 		$result = mysqli_query($conn, $sql);
 
 		$user =[];
@@ -53,7 +53,7 @@
 	function insertUsers($user){
 
 		$conn = getConnection();
-		$sql = "insert into users values('','{$user['employeename']}','{$user['contact no']}', '{$user['username']}', '{$user['password']}', '{$user['email']}', '{$user['type']}')";
+		$sql = "insert into info values('','{$user['employeename']}','{$user['contact no']}', '{$user['username']}', '{$user['password']}', '{$user['email']}', '{$user['type']}')";
 
 		$status = mysqli_query($conn, $sql);
 

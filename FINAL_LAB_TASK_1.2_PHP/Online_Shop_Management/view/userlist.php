@@ -40,9 +40,9 @@
 					<td><?= $data['username'] ?></td>
 					<td><?= $data['password'] ?></td>
 					<td>
-						<a href="edit.php?id=<?= $data['id'] ?>"> Insert</a> |
-						<a href="edit.php?id=<?= $data['id'] ?>"> Update</a> |
-					    <a href="delete.php?id=<?= $data['id'] ?>"> DELETE</a>
+						<a href="insert.php"> Insert</a> |
+						<a href="edit.php"> Update</a> |
+					    <a href="delete.php"> DELETE</a>
 						
 					</td>
 				</tr>
