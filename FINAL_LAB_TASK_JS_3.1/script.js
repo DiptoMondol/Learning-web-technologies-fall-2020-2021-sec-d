@@ -82,4 +82,27 @@ function GenderValidation()
 	}
 
 }
+function DobValidation()
+{
+
+ let dd = document.getElementById('dd').value;
+ let mm = document.getElementById('mm').value;
+ let yy = document.getElementById('yy').value;
+
+    if(dd == '' || mm == '' || yy == ''){
+		document.getElementById('d').innerHTML = 'Empty Date Field ';		
+	}
+	else if(dd >= 0 && dd <=31 || mm >=1 && mm <=12 || yy >=1900 && yy <= 2016 ){
+		document.getElementById('d').innerHTML = dd ;
+		document.getElementById('sl').innerHTML ="/";	
+		document.getElementById('m').innerHTML = mm ;
+		document.getElementById('sl1').innerHTML ="/";	
+		document.getElementById('y').innerHTML = yy ;	
+	}
+	
+      else{
+		document.getElementById('d').innerHTML = 'Valid date required!';
+	}
+
+}
 
