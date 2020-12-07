@@ -10,31 +10,57 @@
 //obj.innerHTML = "test";
 
 
-let student = ['alamin', '123', 'CS'];
+//let student = ['alamin', '123', 'CS'];
 
-function f1()
+function NameValidation()
 {
-	var name = document.getElementById("Name").value;
+	let data= document.getElementById('name').value;
 
-   if (name == "")
-   {  
-      alert("Please enter name first");
-      return false;
-   }
-   else if((name.charAt(0) <= 'a' || name.charAt(0) >= 'z') && (name.charAt(0) <= 'A' || name.charAt(0) >= 'Z'))
-	{
-		alert("Name must start with a letter");
-		return false;
+	if(data == ''){
+		document.getElementById('head').innerHTML = 'Empty name field ';		
 	}
-	else if(name.split(" ").length<2)
-	{
-		alert("Name must contain at least two words");
-		return false;
+	else if(data.length <2){
+		document.getElementById('head').innerHTML = 'Name required two words';	
 	}
-	else
-	{ 
-		return true;
+
+	else if (data >=0 && data <=9){
+		document.getElementById('head').innerHTML = 'Name is invalid';
+	}
+	
+	else if(data >='a' && data <='z' || data>='A' && data <='Z' || data == '.' || data == '-'){
+		document.getElementById('head').innerHTML = data;
+     }
+    
+    else{
+		document.getElementById('head').innerHTML = 'Name is invalid';
+	}
+	
+
+}
+
+
+function EmailValidation()
+{
+	let data= document.getElementById('email').value;
+
+	if(data == ''){
+		document.getElementById('head').innerHTML = 'Empty Name field ';		
+	}
+	else if(data.length <3 ){
+		document.getElementById('head').innerHTML = 'Email is invalid !';	
+	}
+	else if( data.includes("@gmail.com")){
+		document.getElementById('head').innerHTML = data;
+		     }
+	else if( data.includes("@yahoo.com")){
+		document.getElementById('head').innerHTML = data;
+		     }	
+	else if( data.includes("@.edu")){
+		document.getElementById('head').innerHTML = data;
+		     }	          
+      else{
+		document.getElementById('head').innerHTML = 'Email is invalid !';
 	}
 
 }
-}
+
