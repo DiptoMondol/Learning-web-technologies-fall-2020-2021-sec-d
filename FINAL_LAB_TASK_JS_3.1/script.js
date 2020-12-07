@@ -105,4 +105,31 @@ function DobValidation()
 	}
 
 }
+function DegreeValidation(){
+
+ let ss = document.getElementById('ss');
+ let hs= document.getElementById('hs');
+ let bs = document.getElementById('bs');
+ let ms = document.getElementById('ms');
+
+
+
+ if (ss.checked==true) {
+ 	document.getElementById('ssc1').innerHTML = ss.value;		
+ }
+ if(hs.checked==true){
+ 	document.getElementById('hsc2').innerHTML = hs.value;
+ }
+ if(bs.checked==true){
+ 	document.getElementById('bsc3').innerHTML = bs.value;
+ }
+ if(ms.checked==true){
+ 	document.getElementById('msc3').innerHTML = ms.value;
+ }
+ else{
+ 	return false;
+ }
+
+}
+
 
