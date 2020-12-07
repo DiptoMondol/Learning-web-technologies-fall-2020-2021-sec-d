@@ -63,4 +63,23 @@ function EmailValidation()
 	}
 
 }
+function GenderValidation()
+{
+
+ let male = document.getElementById('male');
+ let female = document.getElementById('female');
+ let other = document.getElementById('other');
+
+     if(male.checked ==true ){
+		document.getElementById('head').innerHTML = male.value;		
+	}
+    else if(female.checked ==true){
+		document.getElementById('head').innerHTML = female.value;		
+	}
+	
+     else{
+		document.getElementById('head').innerHTML = other.value;
+	}
+
+}
 
