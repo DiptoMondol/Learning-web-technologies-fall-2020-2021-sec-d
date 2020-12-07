@@ -124,7 +124,7 @@ function DegreeValidation(){
  	document.getElementById('bsc3').innerHTML = bs.value;
  }
  if(ms.checked==true){
- 	document.getElementById('msc3').innerHTML = ms.value;
+ 	document.getElementById('msc4').innerHTML = ms.value;
  }
  else{
  	return false;
