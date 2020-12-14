@@ -21,10 +21,10 @@
      
 	
 
-	function insertUsers($user){
+	function insert($user){
 
 		$conn = getConnection();
-		$sql = "insert into login( id,password ,conpasswod, name,email,user_type) values('{$user['id']}' , '{$user['password']}', '{$user['conpasswod']}','{$user['name']}','{$user['email']}','{$user['user_type']}')";
+		$sql = "insert into login( id,password , name,email,user_type) values('{$user['id']}' , '{$user['password']}','{$user['name']}','{$user['email']}','{$user['user_type']}')";
 
 		$status = mysqli_query($conn, $sql);
 

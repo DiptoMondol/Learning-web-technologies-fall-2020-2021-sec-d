@@ -1,3 +1,7 @@
+<?php 
+	include('../php/regitrationCheck.php');
+
+ ?>
 <html>
 
 <head></head>
@@ -22,10 +26,10 @@
 					
 					User Type
 					
-						<select name="" multiple>
-							<option value="">/admin</option>
-							<option value="">/teacher</option>
-							option
+						<select name="type" multiple>
+							<option value="admin">admin</option>
+							<option value="teacher">teacher</option>
+							
 						</select>
 				</fieldset>
 			</td>

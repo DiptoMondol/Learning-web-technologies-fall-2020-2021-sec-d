@@ -24,7 +24,7 @@
                 <input type="text" name="password"><br><br>
                 <input type="checkbox" name="rememberMe" value="Remember Me"> Remember Me
                 <hr>
-                <input type="submit" name="submit" value="Login"> <a href="view/registration.php">Register</a>
+                <input type="submit" name="submit" value="Login"> <a href="views/registration.php">Register</a>
                 
             </form>
             
